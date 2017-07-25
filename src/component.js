@@ -15,9 +15,10 @@ const EventEmitter = require('events')
 class I1820Component extends EventEmitter {
   constructor (options) {
     super()
+    this.id = crypto.randomBytes(34).toString('hex')
 
     this.mqttClient = mqtt.connect(`mqtt://${options.mqttHost}:${options.mqttPort}`, {
-      clientId: `I1820/${options.name}/component/${crypto.randomBytes(34).toString('hex')}`
+      clientId: `I1820/${options.name}/component/${this.id}`
     })
 
     this.mqttClient.on('connect', () => {
@@ -35,7 +36,10 @@ class I1820Component extends EventEmitter {
       let result = topic.match(/^I1820\/(\w+)/i)
       if (result && result.length === 2) {
         let action = result[1]
-        this.emit(action, JSON.parse(message))
+        let m = JSON.parse(message)
+        if (m && m.id === this.id) {
+          this.emit(action, m)
+        }
       }
     })
   }
