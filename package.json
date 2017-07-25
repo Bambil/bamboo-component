@@ -1,6 +1,6 @@
 {
   "name": "@i1820/component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Component basis for having components easily.",
   "main": "index.js",
   "scripts": {
