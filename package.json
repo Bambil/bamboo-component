@@ -1,0 +1,19 @@
+{
+  "name": "@i1820/component",
+  "version": "1.0.0",
+  "description": "Component basis for having components easily.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I1820/Component.git"
+  },
+  "author": "Parham Alvani <parham.alvani@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/I1820/Component/issues"
+  },
+  "homepage": "https://github.com/I1820/Component#readme"
+}
