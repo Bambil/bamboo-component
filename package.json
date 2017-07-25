@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/I1820/Component/issues"
   },
-  "homepage": "https://github.com/I1820/Component#readme"
+  "homepage": "https://github.com/I1820/Component#readme",
+  "dependencies": {
+    "mqtt": "^2.9.3"
+  }
 }
