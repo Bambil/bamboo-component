@@ -12,7 +12,7 @@ const winston = require('winston')
 const crypto = require('crypto')
 const EventEmitter = require('events')
 
-class I1820Component extends EventEmitter {
+class BambooComponent extends EventEmitter {
   constructor (options) {
     super()
     this.id = crypto.randomBytes(34).toString('hex')
@@ -45,4 +45,4 @@ class I1820Component extends EventEmitter {
   }
 }
 
-module.exports = I1820Component
+module.exports = BambooComponent
