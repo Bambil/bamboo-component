@@ -1,21 +1,21 @@
 {
-  "name": "@i1820/component",
-  "version": "1.1.0",
-  "description": "Component basis for having components easily.",
+  "name": "@bamboo/component",
+  "version": "1.2.0",
+  "description": "Bamboo component basis",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/I1820/Component.git"
+    "url": "git+https://github.com/bambil/bamboo-component.git"
   },
   "author": "Parham Alvani <parham.alvani@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/I1820/Component/issues"
+    "url": "https://github.com/bambil/bamboo-component/issues"
   },
-  "homepage": "https://github.com/I1820/Component#readme",
+  "homepage": "https://github.com/bambil/bamboo-component#readme",
   "dependencies": {
     "mqtt": "^2.9.3"
   },
