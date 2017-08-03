@@ -23,7 +23,7 @@ class BambooComponent extends EventEmitter {
 
     this.mqttClient.on('connect', () => {
       options.subscribes.forEach((s) => {
-        this.mqttClient.subscribe(`Bamboo/${s}`)
+        this.mqttClient.subscribe(`$queue/Bamboo/${s}`)
       })
       this.emit('ready')
     })
