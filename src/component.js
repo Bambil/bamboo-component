@@ -11,10 +11,20 @@ const mqtt = require('mqtt')
 const winston = require('winston')
 const crypto = require('crypto')
 const EventEmitter = require('events')
+const hoek = require('hoek')
 
 class BambooComponent extends EventEmitter {
-  constructor (options) {
+  constructor (userOptions) {
     super()
+
+    const defaultOptions = {
+      mqttHost: '127.0.0.1',
+      mqttPort: 1883,
+      name: 'newComponent'
+    }
+
+    const options = hoek.applyToDefaults(defaultOptions, userOptions)
+
     this.id = crypto.randomBytes(34).toString('hex')
 
     this.mqttClient = mqtt.connect(`mqtt://${options.mqttHost}:${options.mqttPort}`, {
