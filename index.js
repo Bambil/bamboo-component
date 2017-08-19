@@ -7,4 +7,4 @@
  * | File Name:     index.js
  * +===============================================
  */
-module.exports = require('./src/component')
+module.exports = require('./lib/component')
