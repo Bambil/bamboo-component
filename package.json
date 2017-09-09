@@ -1,6 +1,6 @@
 {
   "name": "@ibamboo/component",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Bamboo component basis",
   "main": "index.js",
   "scripts": {},
